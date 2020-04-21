@@ -39,6 +39,7 @@ FramePlayer.prototype.setOptions = function(options) {
     if ('height' in options) { this.height = options.height; }
     if ('startFrame' in options) { this.startFrame = this.currentFrame = options.startFrame; }
     if ('backwards' in options) { this.backwards = options.backwards; }
+    if ('jsonVideoSrc' in options){this.jsonVideoSrc = options.jsonVideoSrc;}
     if ('radius' in options) {
         var currentStyle = document.createElement('style');
             currentStyle.setAttribute('id', 'style-' + this.elem);
