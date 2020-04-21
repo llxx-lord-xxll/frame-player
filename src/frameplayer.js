@@ -12,14 +12,14 @@ var FramePlayer = function(el, options) {
     this.divCont = document.getElementById(el);
     this.elem = el;
     this.jsonVideoSrc = this.divCont.getAttribute('data-vidsrc');
-    this.rate = 20,
-    this.controls = true,
-    this.paused = false,
-    this.width = '480px',
+    this.rate = 20;
+    this.controls = true;
+    this.paused = false;
+    this.width = '480px';
     this.height = '320px';
     this.backwards = false;
     this.currentFrame = -1;
-    this.startFrame = 0
+    this.startFrame = 0;
     this.radius = null;
 
     this.setOptions(options);
